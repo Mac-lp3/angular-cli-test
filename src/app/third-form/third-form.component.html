@@ -1,0 +1,17 @@
+<div>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th *ngFor="let c of affectedCategories">{{c}}</th>
+    </tr>
+    <tr *ngFor="let p of products">
+      <td>{{p}}</td>
+      <td *ngFor="let c of affectedCategories">
+        <select>
+          <option value="false" selected>No</option>
+          <option value="true">Yes</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</div>
