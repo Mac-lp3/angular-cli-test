@@ -1,0 +1,16 @@
+<div class="form-wrapper">
+  <h2 class="form-wrapper__title">Selection Example</h2>
+  <form class="form-body">
+    <select class="form-body__selector" [(ngModel)]="selected" name="selecter">
+      <option value="0" selected>Please Choose one...</option>
+      <option *ngFor="let ops of selectOptions" value="{{ops.value}}">
+        {{ops.description}}
+      </option>
+    </select>
+  </form>
+</div>
+<p>Currently selected: {{selected}}</p>
+<div class="form-wrapper">
+  <form class="form-body">
+  </form>
+</div>
