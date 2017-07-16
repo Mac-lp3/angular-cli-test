@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-fist-form',
-  templateUrl: './fist-form.component.html',
-  styleUrls: ['./fist-form.component.sass']
+  selector: 'app-first-form',
+  templateUrl: './first-form.component.html',
+  styleUrls: ['./first-form.component.sass']
 })
-export class FistFormComponent implements OnInit {
+export class FirstFormComponent implements OnInit {
 
   selected = 0;
   selectOptions = [

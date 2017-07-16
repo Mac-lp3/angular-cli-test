@@ -1,0 +1,39 @@
+<div class="form-container">
+  <form class="basic-form">
+    <div class="basic-form__input-block">
+      <label for="startDate">Start Date</label>
+      <div>
+        <input type="date" class="form-control" id="startDate" placeholder="Email">
+      </div>
+    </div>
+    <div class="basic-form__input-block">
+      <label for="projName">Project Name</label>
+      <div>
+        <input type="text" class="form-control" id="projName">
+      </div>
+    </div>
+    <div class="basic-form__input-block--triple">
+      <label for="isFunded">Funded?</label>
+      <div>
+        <select id="isFunded" [(ngModel)]="isFunded" name="isFundedSelect">
+          <option [ngValue]="false" selected>No</option>
+          <option [ngValue]="true">Yes</option>
+        </select>
+      </div>
+      <div [hidden]="!isFunded">
+        <textarea class="form-control" rows="3" placeholder="Notes..."></textarea>
+      </div>
+    </div>
+    <div class="col-sm-12"></div>
+    <div class="basic-form__input-block">
+      <label for="priority">Priority</label>
+      <div>
+        <select id="priority" [(ngModel)]="priority" name="prioritySelect">
+          <option [ngValue]="0" selected>Low</option>
+          <option [ngValue]="1">Medium</option>
+          <option [ngValue]="2">High</option>
+        </select>
+      </div>
+    </div>
+  </form>
+</div>

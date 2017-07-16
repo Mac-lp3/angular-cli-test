@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FistFormComponent } from './fist-form.component';
+import { FistFormComponent } from './first-form.component';
 
 describe('FistFormComponent', () => {
   let component: FistFormComponent;

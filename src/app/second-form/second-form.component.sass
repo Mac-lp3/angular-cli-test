@@ -1,0 +1,19 @@
+@import '../../styles'
+
+.basic-form
+  @extend .form-horizontal
+  &__input-block
+    @extend .form-group
+  &__input-block > label
+    @extend .col-sm-2, .control-label
+  &__input-block > div
+    @include make-sm-column-offset(5)
+    @extend .col-sm-3
+
+  &__input-block--triple > label
+    @extend .col-sm-2, .control-label
+  &__input-block--triple div:nth-child(2)
+    @include make-sm-column-offset(2)
+    @extend .col-sm-3
+  &__input-block--triple div:nth-child(3)
+    @extend .col-sm-3
